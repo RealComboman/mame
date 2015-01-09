@@ -43,6 +43,7 @@ INPUT_CHANGED_MEMBER(firetrk_state::gear_changed)
 {
 	if (newval)
 		m_gear = (FPTR)param;
+		output_set_value("P1gear", m_gear+1);
 }
 
 
